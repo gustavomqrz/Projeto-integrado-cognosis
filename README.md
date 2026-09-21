@@ -9,7 +9,7 @@
 1. [Sobre](#-sobre)
 2. [Imagens e Vídeos Ilustrativos](#-imagens-e-vídeos-ilustrativos)
 3. [Equipe](#-equipe)
-4. [Tecnologias](#-tecnologias)
+4. [Tecnologias](#tecnologias)
 5. [Licença](#-licença)
 6. [Como Rodar](#-como-rodar)
 7. [Requisitos Funcionais](#-requisitos-funcionais)
