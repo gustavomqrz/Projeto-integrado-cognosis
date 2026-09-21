@@ -37,11 +37,11 @@ Prints serão adicionados futuramente
  
 ## Tecnologias
 
-#Front End:
+Front End:
 - React
 - Tailwind CSS
 
-#Backend:
+Backend:
 - Supabase
 - TypeScript
 
