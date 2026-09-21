@@ -18,7 +18,7 @@
  
 ## Sobre
  
-O **Cognosis** é a modernização do site estático da disciplina de Cognição e Tecnologias Digitais (curso de Sistemas e Mídias Digitais, UFC), transformando um repositório de arquivos em uma aplicação web interativa e gamificada. Os conteúdos teóricos serão apresentados através de um mapa navegável dividido em ilhas temáticas, com acompanhamento de progresso para alunos matriculados e um painel de gestão para o corpo docente.
+O objetivo do nosso projeto é a modernização do site (Cognosis) estático da disciplina de Cognição e Tecnologias Digitais (curso de Sistemas e Mídias Digitais, UFC), transformando um repositório de arquivos em uma aplicação web interativa e gamificada. Os conteúdos teóricos serão apresentados através de um mapa navegável dividido em ilhas temáticas, com acompanhamento de progresso para alunos matriculados e um painel de gestão para o corpo docente.
  
 ## Imagens e Vídeos Ilustrativos
  
