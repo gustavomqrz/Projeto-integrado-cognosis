@@ -1,16 +1,10 @@
 # Projeto-integrado-cognosis
 
-
-<div align="center">
-# Cognosis
- 
-</div>
-
 `gamificação` `aprendizagem` `educação` `mapa interativo` `UFC` `Sistemas e Mídias Digitais`
  
 ---
  
-## 📑 Índice
+## Índice
  
 1. [Sobre](#-sobre)
 2. [Imagens e Vídeos Ilustrativos](#-imagens-e-vídeos-ilustrativos)
@@ -22,15 +16,15 @@
 8. [Link para o Relatório](#-link-para-o-relatório)
 ---
  
-## 📖 Sobre
+## Sobre
  
 O **Cognosis** é a modernização do site estático da disciplina de Cognição e Tecnologias Digitais (curso de Sistemas e Mídias Digitais, UFC), transformando um repositório de arquivos em uma aplicação web interativa e gamificada. Os conteúdos teóricos serão apresentados através de um mapa navegável dividido em ilhas temáticas, com acompanhamento de progresso para alunos matriculados e um painel de gestão para o corpo docente.
  
-## 🖼️ Imagens e Vídeos Ilustrativos
+## Imagens e Vídeos Ilustrativos
  
 Prints serão adicionados futuramente
  
-## 👥 Equipe
+## Equipe
  
 | Nome | Função |
 |---|---|
@@ -41,7 +35,7 @@ Prints serão adicionados futuramente
 | José Guilherme | Programador |
 | Yuri Holanda | Engenheiro UX/UI |
  
-## 🛠️ Tecnologias
+## Tecnologias
  
 
  
@@ -53,7 +47,7 @@ Prints serão adicionados futuramente
 
  
  
-## ✅ Requisitos Funcionais
+## Requisitos Funcionais
  
 | ID | Descrição | Prioridade | Estado | Área | Implantação |
 |---|---|---|---|---|---|
@@ -74,7 +68,7 @@ Prints serão adicionados futuramente
 | RF15 | O sistema deve permitir que o corpo docente publique avisos gerais. | Média | A Fazer | Gestão |  |
 | RF16 | O sistema deve permitir que os professores atualizem ou insiram novos conteúdos teóricos e materiais de estudo na plataforma. | Alta | A Fazer | Gestão | |
  
-## 🔗 Link para o Relatório
+## Link para o Relatório
  
 Link para o relatório final será adicionado posteriormente
 
