@@ -6,14 +6,14 @@
  
 ## Índice
  
-1. [Sobre](#-sobre)
-2. [Imagens e Vídeos Ilustrativos](#-imagens-e-vídeos-ilustrativos)
-3. [Equipe](#-equipe)
+1. [Sobre](#sobre)
+2. [Imagens e Vídeos Ilustrativos](#imagens-e-vídeos-ilustrativos)
+3. [Equipe](#equipe)
 4. [Tecnologias](#tecnologias)
-5. [Licença](#-licença)
-6. [Como Rodar](#-como-rodar)
-7. [Requisitos Funcionais](#-requisitos-funcionais)
-8. [Link para o Relatório](#-link-para-o-relatório)
+5. [Licença](#licença)
+6. [Como Rodar](#como-rodar)
+7. [Requisitos Funcionais](#requisitos-funcionais)
+8. [Link para o Relatório](#link-para-o-relatório)
 ---
  
 ## Sobre
@@ -36,8 +36,17 @@ Prints serão adicionados futuramente
 | Yuri Holanda | Engenheiro UX/UI |
  
 ## Tecnologias
- 
 
+- Front End:
+- React
+- Tailwind CSS
+
+- Backend:
+- Supabase
+- TypeScript
+
+- API:
+ 
  
 ## Licença
  
