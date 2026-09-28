@@ -38,46 +38,47 @@ Prints serão adicionados futuramente
 ## Tecnologias
 
 Front End:
-- React
-- Tailwind CSS
+- HTML
+- CSS
 
 Backend:
-- Supabase
-- TypeScript
-
-- API:
- 
+- JavaScript
+- Google sheets + Apps Script
  
 ## Licença
  
+Este projeto está sob a licença GPL v3
 
- 
 ## Como Rodar
 
 
  
 ## Requisitos Funcionais
  
-| ID | Descrição | Prioridade | Estado | Área | Implantação |
-|---|---|---|---|---|---|
-| RF01 | O sistema deve apresentar uma tela inicial de login com opções de acesso para alunos regulares e entrada como convidado. | Alta | A Fazer | Autenticação |  |
-| RF02 | O sistema deve permitir a autenticação dos alunos utilizando exclusivamente o número de matrícula. | Alta | A Fazer | Autenticação |  |
-| RF03 | O sistema deve validar a matrícula do aluno de forma automatizada, cruzando o dado inserido com uma planilha do Google Sheets gerenciada pelo professor. | Alta | A Fazer | Autenticação |  |
-| RF04 | O sistema deve permitir que visitantes acessem conteúdos públicos através do login de convidado, sem necessidade de cadastro. | Média | A Fazer | Autenticação |  |
-| RF05 | O sistema deve apresentar um menu de navegação posicionado no topo da interface. | Alta | A Fazer | Interface |  |
-| RF06 | O sistema deve exibir o conteúdo de forma gamificada através de um mapa contendo 4 ilhas principais, representando as divisões da disciplina. | Alta | A Fazer | Gamificação |  |
-| RF07 | O sistema deve aplicar um efeito de aproximação (zoom) quando o usuário clicar em uma das ilhas, revelando as informações daquela parte. | Alta | A Fazer | Gamificação | |
-| RF08 | O sistema deve centralizar conteúdos teóricos, repositórios de arquivos e exercícios interativos em um único ambiente digital. | Alta | A Fazer | Conteúdo |  |
-| RF09 | O sistema deve salvar o progresso de leitura e conclusão de etapas exclusivamente para os alunos matriculados e logados. | Alta | A Fazer | Progresso |  |
-| RF10 | O sistema não deve salvar histórico de progressão ou engajamento para usuários autenticados como convidados. | Baixa | A Fazer | Progresso |  |
-| RF11 | O sistema deve exibir um HUD (Heads-Up Display) para que o aluno acompanhe de forma imediata o seu próprio progresso nas etapas. | Alta | A Fazer | Interface / Progresso |  |
-| RF12 | O sistema deve fornecer feedback imediato (correção/retorno) nas atividades e exercícios interativos realizados. | Média | A Fazer | Gamificação |  |
-| RF13 | O sistema deve possuir uma aba de acesso restrito destinada ao corpo docente (professor e monitores). | Alta | A Fazer | Gestão |  |
-| RF14 | O sistema deve fornecer ao professor um painel de acompanhamento para visualizar o progresso e as etapas concluídas por cada aluno. | Alta | A Fazer | Gestão |  |
-| RF15 | O sistema deve permitir que o corpo docente publique avisos gerais. | Média | A Fazer | Gestão |  |
-| RF16 | O sistema deve permitir que os professores atualizem ou insiram novos conteúdos teóricos e materiais de estudo na plataforma. | Alta | A Fazer | Gestão | |
- 
+| ID | Descrição | Prioridade | Estado |
+|---|---|---|---|
+| RF01 | Tela inicial de login com opção de aluno (matrícula) ou visitante | Alta | Finalizado |
+| RF02 | Autenticação do aluno somente por número de matrícula, sem senha | Alta | Finalizado |
+| RF03 | Validação automatizada da matrícula digitada contra a planilha de alunos fornecida pelo professor | Alta | Finalizado |
+| RF04 | Acesso de visitante a conteúdos públicos sem necessidade de matrícula | Alta | Finalizado |
+| RF05 | Registro automático de cada acesso (nome, matrícula, tipo de usuário, data e horário) | Média | Finalizado |
+| RF06 | Diferenciação do tipo de acesso registrado: "Aluno" (matrícula validada) ou "Visitante" | Média | Finalizado |
+| RF07 | Exibição de mensagem de erro quando a matrícula não é encontrada na planilha | Alta | Finalizado |
+| RF08 | Tela de carrossel exibindo os reinos/capítulos disponíveis, um por vez | Alta | Em andamento |
+| RF09 | Navegação entre reinos por setas laterais (anterior/próximo) | Alta | Finalizado |
+| RF10 | Indicadores visuais mostrando a posição atual no carrossel de reinos | Média | Finalizado |
+| RF11 | Efeito de zoom ao selecionar um reino, levando à tela do mapa daquele reino | Média | Finalizado |
+| RF12 | Mapa interativo por reino, com locais/pontos de interesse posicionados sobre a imagem | Alta | Em andamento |
+| RF13 | Painel de informação exibido ao clicar num local do mapa, com suporte a texto | Alta | Finalizado |
+| RF14 | Suporte a vídeo incorporado | Média | Finalizado |
+| RF15 | Botão de retorno da tela do mapa para a tela de seleção de reinos | Alta | Finalizado |
+| RF16 | Menu "Sobre" explicando o propósito do site/disciplina | Baixa | Finalizado |
+| RF17 | Layout responsivo adaptável a diferentes tamanhos de tela | Média | A fazer |
+| RF18 | Imagens em órbita na tela de login com links externos (ex: Instagram do Cognosis e da equipe) | Baixa | Finalizado |
+| RF19 | Fechamento do painel de informação (botão "X" ou clique fora) com retorno ao mapa | Média | Finalizado |
+| RF20 | Barras de progresso para sinalizar a progressão do usuário pelo conteúdo | Média | A fazer |
+
 ## Link para o Relatório
- 
+
 Link para o relatório final será adicionado posteriormente
 
