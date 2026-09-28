@@ -92,6 +92,7 @@ Imagens, logotipos e demais materiais visuais (como os brasões da CTD e da UFC,
    | Live Server | `http://127.0.0.1:5500/login.html` |
    | Python | `http://localhost:8000/login.html` |
    | Node (`npx serve`) | `http://localhost:3000/login.html` |
+   
    Pronto: a aplicação estará rodando e a planilha registrará os acessos.
 
 > **Observações:**
