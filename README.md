@@ -70,12 +70,12 @@ Imagens, logotipos e demais materiais visuais (como os brasões da CTD e da UFC,
 ```
  
 2. Configure o login (a planilha do Google funciona como o back-end do projeto):
-   2.1. Crie uma planilha no Google Sheets com duas abas de nomes exatos:
+   1. Crie uma planilha no Google Sheets com duas abas de nomes exatos:
       - **Alunos:** linha 1 com o cabeçalho (`Matrícula` e `Aluno`); a partir da linha 2, coluna A = matrícula e coluna B = nome do aluno.
       - **Acessos:** deixe vazia, com o cabeçalho na linha 1 (`Nome`, `Matrícula`, `Tipo`, `Data`, `Horário`). O script grava cada acesso a partir da linha 2.
-   2.2. Na planilha, abra **Extensões > Apps Script**, apague o conteúdo padrão e cole o código do arquivo `Codigo.gs`.
-   2.3. Clique em **Implantar > Nova implantação**, escolha o tipo **App da Web**, com **Executar como: Eu** e **Quem pode acessar: Qualquer pessoa**.
-   2.4. Copie a URL gerada (termina em `/exec`) e cole na constante `URL_SCRIPT_LOGIN`, no topo de `js/login.js`.
+   2. Na planilha, abra **Extensões > Apps Script**, apague o conteúdo padrão e cole o código do arquivo `Codigo.gs`.
+   3. Clique em **Implantar > Nova implantação**, escolha o tipo **App da Web**, com **Executar como: Eu** e **Quem pode acessar: Qualquer pessoa**.
+   4. Copie a URL gerada (termina em `/exec`) e cole na constante `URL_SCRIPT_LOGIN`, no topo de `js/login.js`.
         
 3. Inicie um servidor local. Recomendamos o **Live Server** do VS Code por ser o mais simples: abra a pasta no VS Code e clique em **Go Live**. Também é possível usar Python ou Node:
 ```bash
