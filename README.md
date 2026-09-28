@@ -18,8 +18,10 @@
  
 ## Sobre
  
-O objetivo do nosso projeto é a modernização do site (Cognosis) estático da disciplina de Cognição e Tecnologias Digitais (curso de Sistemas e Mídias Digitais, UFC), transformando um repositório de arquivos em uma aplicação web interativa e gamificada. Os conteúdos teóricos serão apresentados através de um mapa navegável dividido em ilhas temáticas, com acompanhamento de progresso para alunos matriculados.
+O objetivo do nosso projeto é a modernização do site (Cognosis) estático da disciplina de Cognição e Tecnologias Digitais (curso de Sistemas e Mídias Digitais, UFC), transformando um repositório de arquivos em uma aplicação web interativa e gamificada.
  
+Os conteúdos teóricos são apresentados por meio de reinos temáticos: o usuário escolhe um reino em um carrossel e explora o mapa dele, clicando em pontos de interesse para ver textos e vídeos. O acesso dos alunos matriculados é validado e registrado em uma planilha controlada pelo professor.
+
 ## Imagens e Vídeos Ilustrativos
  
 Prints serão adicionados futuramente
@@ -37,22 +39,65 @@ Prints serão adicionados futuramente
  
 ## Tecnologias
 
-Front End:
+Front-end:
 - HTML
 - CSS
-
-Backend:
 - JavaScript
-- Google sheets + Apps Script
- 
+  
+Back-end:
+- Google Sheets + Google Apps Script (validação de matrícula e registro de acessos)
+
 ## Licença
  
-Este projeto está sob a licença GPL v3
+Este projeto está sob a licença GPL v3.
+
+Imagens, logotipos e demais materiais visuais (como os brasões da CTD e da UFC, além das artes da equipe) não são cobertos por esta licença e pertencem aos seus respectivos autores.
 
 ## Como Rodar
 
-
+### Pré-requisitos
  
+- Um navegador atual (Chrome, Edge, Firefox...)
+- Uma das opções para servir os arquivos localmente: a extensão **Live Server** do VS Code, [Python 3](https://www.python.org/) ou [Node.js](https://nodejs.org/)
+- Uma conta Google, para criar a planilha usada no login (passo 2)
+  
+### Passo a passo
+ 
+1. Clone o repositório e entre na pasta:
+```bash
+   git clone https://github.com/SEU-USUARIO/Projeto-integrado-cognosis.git
+   cd Projeto-integrado-cognosis
+```
+ 
+2. Configure o login (a planilha do Google funciona como o back-end do projeto):
+   2.1. Crie uma planilha no Google Sheets com duas abas de nomes exatos:
+      - **Alunos:** linha 1 com o cabeçalho (`Matrícula` e `Aluno`); a partir da linha 2, coluna A = matrícula e coluna B = nome do aluno.
+      - **Acessos:** deixe vazia, com o cabeçalho na linha 1 (`Nome`, `Matrícula`, `Tipo`, `Data`, `Horário`). O script grava cada acesso a partir da linha 2.
+   2.2. Na planilha, abra **Extensões > Apps Script**, apague o conteúdo padrão e cole o código do arquivo `Codigo.gs`.
+   2.3. Clique em **Implantar > Nova implantação**, escolha o tipo **App da Web**, com **Executar como: Eu** e **Quem pode acessar: Qualquer pessoa**.
+   2.4. Copie a URL gerada (termina em `/exec`) e cole na constante `URL_SCRIPT_LOGIN`, no topo de `js/login.js`.
+        
+3. Inicie um servidor local. Recomendamos o **Live Server** do VS Code por ser o mais simples: abra a pasta no VS Code e clique em **Go Live**. Também é possível usar Python ou Node:
+```bash
+   # Python
+   python -m http.server 8000
+ 
+   # ou Node.js
+   npx serve
+```
+ 
+4. Acesse o site no navegador. O endereço depende da opção escolhida:
+   | Opção | Endereço |
+   |---|---|
+   | Live Server | `http://127.0.0.1:5500/login.html` |
+   | Python | `http://localhost:8000/login.html` |
+   | Node (`npx serve`) | `http://localhost:3000/login.html` |
+   Pronto: a aplicação estará rodando e a planilha registrará os acessos.
+
+> **Observações:**
+>  Não abra os arquivos com duplo clique. O site usa módulos JavaScript (`import`), que os navegadores bloqueiam quando a página não está hospedada em um servidor.
+>  sempre que alterar o `Codigo.gs`, publique uma **nova versão** da implantação no Apps Script para a mudança valer na URL, ou então a aplicação continuará usando o script antigo.
+
 ## Requisitos Funcionais
  
 | ID | Descrição | Prioridade | Estado |
@@ -78,7 +123,7 @@ Este projeto está sob a licença GPL v3
 | RF19 | Fechamento do painel de informação (botão "X" ou clique fora) com retorno ao mapa | Média | Finalizado |
 | RF20 | Barras de progresso para sinalizar a progressão do usuário pelo conteúdo | Média | A fazer |
 
-## Link para o Relatório
+## Link para o Relatório Final
 
 Link para o relatório final será adicionado posteriormente
 
