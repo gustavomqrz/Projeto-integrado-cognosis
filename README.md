@@ -63,66 +63,63 @@ Imagens, logotipos e demais materiais visuais (como os brasões da CTD e da UFC,
   
 ### Passo a passo
  
-1. Clone o repositório e entre na pasta:
-```bash
-   git clone https://github.com/SEU-USUARIO/Projeto-integrado-cognosis.git
-   cd Projeto-integrado-cognosis
-```
- 
-2. Configure o login (a planilha do Google funciona como o back-end do projeto):
-   1. Crie uma planilha no Google Sheets com duas abas de nomes exatos:
-      - **Alunos:** linha 1 com o cabeçalho (`Matrícula` e `Aluno`); a partir da linha 2, coluna A = matrícula e coluna B = nome do aluno.
-      - **Acessos:** deixe vazia, com o cabeçalho na linha 1 (`Nome`, `Matrícula`, `Tipo`, `Data`, `Horário`). O script grava cada acesso a partir da linha 2.
-   2. Na planilha, abra **Extensões > Apps Script**, apague o conteúdo padrão e cole o código do arquivo `Codigo.gs`.
-   3. Clique em **Implantar > Nova implantação**, escolha o tipo **App da Web**, com **Executar como: Eu** e **Quem pode acessar: Qualquer pessoa**.
-   4. Copie a URL gerada (termina em `/exec`) e cole na constante `URL_SCRIPT_LOGIN`, no topo de `js/login.js`.
-        
-3. Inicie um servidor local. Recomendamos o **Live Server** do VS Code por ser o mais simples: abra a pasta no VS Code e clique em **Go Live**. Também é possível usar Python ou Node:
-```bash
-   # Python
-   python -m http.server 8000
- 
-   # ou Node.js
-   npx serve
-```
- 
-4. Acesse o site no navegador. O endereço depende da opção escolhida:
-   | Opção | Endereço |
-   |---|---|
-   | Live Server | `http://127.0.0.1:5500/login.html` |
-   | Python | `http://localhost:8000/login.html` |
-   | Node (`npx serve`) | `http://localhost:3000/login.html` |
+1. Clonar o repositório
+
+Abra o terminal e clone o repositório do projeto:
+
+bash
+git clone https://github.com/SEU-USUARIO/Projeto-integrado-cognosis.git
+
+2. Abrir no editor
+
+Abra a pasta raiz do projeto no seu editor de código (por exemplo, o VS Code). A estrutura principal deve exibir a pasta projeto_int1/, contendo os diretórios linhaDoTempo, livro, login, mapa e reinoDeWalden2.
+
+3. Configurar o back-end (planilha de acessos - opcional)
+
+Para habilitar o registro automático de logins e acessos dos alunos através do Google Sheets:
+
+Crie uma nova planilha no Google Sheets com duas abas de nomes exatos:
+Alunos: linha 1 com o cabeçalho (Matrícula e Aluno). A partir da linha 2, insira na coluna A a matrícula e na coluna B o nome do aluno.
+Acessos: mantenha vazia, apenas com o cabeçalho na linha 1 (Nome, Matrícula, Tipo, Data, Horário). O script gravará cada novo acesso a partir da linha 2.
+Na planilha, acesse Extensões > Apps Script, apague qualquer código padrão e cole o conteúdo do arquivo login.gs (localizado dentro da pasta login/ do projeto).
+Clique em Implantar > Nova implantação, selecione o tipo App da Web e configure Executar como: Eu e Quem pode acessar: Qualquer pessoa.
+Copie a URL gerada pelo Google Apps Script (que termina em /exec) e cole-a na constante URL_SCRIPT_LOGIN, localizada no topo do arquivo login/login.js.
+
+4. Executar a aplicação
+No VS Code, acesse a pasta projeto_int1/login.
+Abra o arquivo login.html.
+Use a extensão Live Server do VS Code para iniciar o servidor local, clicando em Go Live.
+O navegador abrirá automaticamente na página de login, permitindo realizar o acesso, assistir ao vídeo de abertura integrado e navegar pelo livro interativo, pelos reinos e pelo mapa da jornada.
    
-   Pronto: a aplicação estará rodando e a planilha registrará os acessos.
+Pronto: a aplicação estará rodando e a planilha registrará os acessos.
 
 > **Observações:**
 >  Não abra os arquivos com duplo clique. O site usa módulos JavaScript (`import`), que os navegadores bloqueiam quando a página não está hospedada em um servidor.
->  sempre que alterar o `Codigo.gs`, publique uma **nova versão** da implantação no Apps Script para a mudança valer na URL, ou então a aplicação continuará usando o script antigo.
+>  sempre que alterar o `login.gs`, publique uma **nova versão** da implantação no Apps Script para a mudança valer na URL, ou então a aplicação continuará usando o script antigo.
 
 ## Requisitos Funcionais
- 
-| ID | Descrição | Prioridade | Estado |
+
+| ID | Requisito | Prioridade | Estado |
 |---|---|---|---|
-| RF01 | Tela inicial de login com opção de aluno (matrícula) ou visitante | Alta | Finalizado |
-| RF02 | Autenticação do aluno somente por número de matrícula, sem senha | Alta | Finalizado |
-| RF03 | Validação automatizada da matrícula digitada contra a planilha de alunos fornecida pelo professor | Alta | Finalizado |
-| RF04 | Acesso de visitante a conteúdos públicos sem necessidade de matrícula | Alta | Finalizado |
-| RF05 | Registro automático de cada acesso (nome, matrícula, tipo de usuário, data e horário) | Média | Finalizado |
-| RF06 | Diferenciação do tipo de acesso registrado: "Aluno" (matrícula validada) ou "Visitante" | Média | Finalizado |
-| RF07 | Exibição de mensagem de erro quando a matrícula não é encontrada na planilha | Alta | Finalizado |
-| RF08 | Tela de carrossel exibindo os reinos/capítulos disponíveis, um por vez | Alta | Em andamento |
-| RF09 | Navegação entre reinos por setas laterais (anterior/próximo) | Alta | Finalizado |
-| RF10 | Indicadores visuais mostrando a posição atual no carrossel de reinos | Média | Finalizado |
-| RF11 | Efeito de zoom ao selecionar um reino, levando à tela do mapa daquele reino | Média | Finalizado |
-| RF12 | Mapa interativo por reino, com locais/pontos de interesse posicionados sobre a imagem | Alta | Em andamento |
-| RF13 | Painel de informação exibido ao clicar num local do mapa, com suporte a texto | Alta | Finalizado |
-| RF14 | Suporte a vídeo incorporado | Média | Finalizado |
-| RF15 | Botão de retorno da tela do mapa para a tela de seleção de reinos | Alta | Finalizado |
-| RF16 | Menu "Sobre" explicando o propósito do site/disciplina | Baixa | Finalizado |
-| RF17 | Layout responsivo adaptável a diferentes tamanhos de tela | Média | A fazer |
-| RF18 | Imagens em órbita na tela de login com links externos (ex: Instagram do Cognosis e da equipe) | Baixa | Finalizado |
-| RF19 | Fechamento do painel de informação (botão "X" ou clique fora) com retorno ao mapa | Média | Finalizado |
-| RF20 | Barras de progresso para sinalizar a progressão do usuário pelo conteúdo | Média | A fazer |
+| RF01 | O sistema deve ter tela de login em que o aluno entra com a matrícula ou escolhe "Entrar como visitante". | Alta | Implementado |
+| RF02 | O sistema deve validar automaticamente a matrícula digitada com a lista de alunos da planilha do professor. | Alta | Implementado |
+| RF03 | O sistema deve registrar automaticamente na planilha cada acesso (nome, matrícula, tipo, data e horário), tanto de alunos quanto de visitantes. | Alta | Implementado |
+| RF04 | O sistema deve permitir que visitantes acessem o conteúdo sem cadastro. | Alta | Implementado |
+| RF05 | O sistema deve exibir uma mensagem de erro quando a matrícula não é encontrada na planilha | Alta | Implementado |
+| RF06 | O sistema deve ter uma página "Sobre", que apresenta o projeto. | Baixa | Implementado |
+| RF07 | O sistema deve exibir um vídeo de abertura como transição entre o login e o livro interativo. | Baixa | Implementado |
+| RF08 | O sistema deve possuir um livro interativo com conteúdos da matéria | Alta | Implementado |
+| RF09 | O sistema deve exibir o Mapa da Jornada com quatro destinos clicáveis: Walden II, Pragnanz, Orsha e Missão Linha do Tempo. | Alta | Implementado |
+| RF10 | O sistema deve permitir voltar ao Mapa da Jornada a partir de qualquer reino ou missão. | Alta | Em andamento |
+| RF11 | O sistema deve ter a Missão Linha do Tempo, com texto-base, vídeos de apoio, orientação de pesquisa e checklist de etapas. | Alta | Implementado |
+| RF12 | O Reino Walden II deve apresentar o conteúdo em capítulos sequenciais, com navegação Voltar e Continuar. | Alta | Implementado |
+| RF13 | Os reinos devem apresentar conteúdo teórico em texto e imagens. | Alta | Em andamento |
+| RF14 | Os reinos devem incorporar vídeos do YouTube em carrossel ou em abas temáticas. | Média | Em andamento |
+| RF15 | Os reinos devem exibir exemplos de postagens do perfil do Cognosis no Instagram, com link para o perfil. | Baixa | Implementado |
+| RF16 | Imagens em órbita na tela de login com links externos (ex: Instagram do Cognosis e da equipe) | Baixa | Implementado |
+| RF17 | O Reino Pragnanz deve seguir a estrutura do Walden II, com capítulos e conteúdos em HTML interativo. | Alta | Em andamento |
+| RF18 | O Reino Orsha deve ter uma lista de conversas com personagens, uma por tema. | Alta | A fazer |
+| RF19 | Cada conversa de Orsha deve ser exibida em formato de chat, com histórico de mensagens e mídias. | Alta | A fazer |
 
 ## Link para o Relatório Final
 
