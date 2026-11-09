@@ -67,8 +67,12 @@ Imagens, logotipos e demais materiais visuais (como os brasões da CTD e da UFC,
 
 Abra o terminal e clone o repositório do projeto:
 
-bash
+```bash
 git clone https://github.com/SEU-USUARIO/Projeto-integrado-cognosis.git
+```
+ou
+
+Faça o download dos arquivos diretamente pela página do repositório no github clicando no botão verde escrito <>code e então na opção Download ZIP, assim você terá o arquivo compactado.
 
 2. Abrir no editor
 
