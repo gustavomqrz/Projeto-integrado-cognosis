@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Na Prática + Missão - Reino de Walden II</title>
+    <link rel="stylesheet" href="missao.css">
+</head>
+<body>
+    <header class="walden-header">
+        <div class="header-logo-site">COGNOSIS</div>
+        <div class="header-titulo-reino">Reino de Walden II</div>
+        <a href="../../mapa/mapa.html" class="header-voltar">← Voltar a jornada</a>
+    </header>
+
+    <main class="conteudo-pagina">
+        <section style="margin-bottom: 60px;">
+            <div class="capitulo-tag">Capítulo III · Na Prática</div>
+            <h1 style="font-size: 34px; font-weight: normal; margin-bottom: 30px;">Situações cotidianas</h1>
+            <p style="font-size: 15px; color: #f0e6d2; margin-bottom: 30px;">Os conceitos do behaviorismo podem ser encontrados em diversas situações cotidianas:</p>
+
+            <div class="abas-categorias">
+                <button class="aba-cat ativo" onclick="mudarCategoria('cotidiano', event)">Cotidiano <span>2 vídeos</span></button>
+                <button class="aba-cat" onclick="mudarCategoria('filmes', event)">Filmes e séries <span>2 vídeos</span></button>
+                <button class="aba-cat" onclick="mudarCategoria('jogos', event)">Jogos digitais <span>1 vídeo · artigo</span></button>
+            </div>
+
+            <div id="cat-cotidiano" class="painel-categoria ativo">
+                <div class="grid-multimidia">
+                    <div class="card-midia">
+                        <iframe class="video-frame" src="https://www.youtube.com/embed/6t_ACDM9aqI?si=HCgEWRZSjUS1omxK" title="Vídeo Cotidiano 1" allowfullscreen></iframe>
+                        <div class="midia-info"><span>Visto · Assistir</span><span>▶</span></div>
+                        <div class="midia-titulo">Conformidade Social - O Experimento</div>
+                    </div>
+                    <div class="card-midia">
+                        <iframe class="video-frame" src="https://www.youtube.com/embed/S0xCv_S2JJM?si=NQfIX0Z8ieUSnhfG" title="Vídeo Cotidiano 2" allowfullscreen></iframe>
+                        <div class="midia-info"><span>Visto · Assistir</span><span>▶</span></div>
+                        <div class="midia-titulo">Conformidade Social ASCH - Experimentos Elevator</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cat-filmes" class="painel-categoria">
+                <div class="grid-multimidia">
+                    <div class="card-midia">
+                        <iframe class="video-frame" src="https://www.youtube.com/embed/C1i0Os8WEG4?si=OLYUIGo_MuGy7kaX" title="Filme 1" allowfullscreen></iframe>
+                        <div class="midia-info"><span>Visto · Assistir</span><span>▶</span></div>
+                        <div class="midia-titulo">Behaviorismo - reforço e punição</div>
+                    </div>
+                    <div class="card-midia">
+                        <iframe class="video-frame" src="https://www.youtube.com/embed/Ml6ovTBSjXo?si=4-XAZGq-eQ0gQ_27" title="Filme 2" allowfullscreen></iframe>
+                        <div class="midia-info"><span>Visto · Assistir</span><span>▶</span></div>
+                        <div class="midia-titulo">GUMBALL E O BEHAVIORISMO #minitouro</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cat-jogos" class="painel-categoria">
+                <div class="grid-multimidia">
+                    <div class="card-midia">
+                        <iframe class="video-frame" src="https://www.youtube.com/embed/m7vQ9KG8R10?si=nIncGrZ10NdAGBF1" title="Jogo 1" allowfullscreen></iframe>
+                        <div class="midia-info"><span>Visto · Assistir</span><span>▶</span></div>
+                        <div class="midia-titulo">Angry Bird Characters - Tutorial & Gameplay</div>
+                    </div>
+                    <div class="card-midia" style="display: flex; flex-direction: column; justify-content: space-between; padding: 25px;">
+                        <div>
+                            <span style="font-size: 11px; font-family: 'Helvetica Neue', Arial, sans-serif; color: #a08c5b; letter-spacing: 1px;">Artigo · 2011</span>
+                            <h3 style="font-size: 18px; font-weight: normal; margin-top: 10px; margin-bottom: 10px;">Arremessando Pássaros em Porcos. Uma Análise de Jogos no Ambiente Mobile</h3>
+                            <p style="font-size: 12px; color: #bfae88;">André Fagundes Pase e Roberto Tiezzari</p>
+                        </div>
+                        <button class="btn-artdeco" style="align-self: flex-start; margin-top: 20px;" onclick="window.open('https://repositorio.pucrs.br/dspace/bitstream/10923/11178/2/Arremessando_Passaros_em_Porcos_uma_Analise_de_Jogos_no_Ambiente_Mobile_a_partir_de_Angry_Birds.pdf', '_blank')">Ler o texto</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccao-leituras">
+            <div style="width: 240px; text-align: center; flex-shrink: 0;">
+                <img src="/reinoDeWalden2/imagensWalden2/ariel-lendo.jpg" alt="Ariel" style="width: 100%; max-width: 300px;">
+                <div style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #a08c5b; margin-top: 10px;">Leituras · Aprofundamento</div>
+            </div>
+            <div class="leituras-texto">
+                <h2>Para reforçar sua compreensão sobre o Behaviorismo, faça uma leitura dos seguintes textos:</h2>
+                
+                <div class="item-leitura">
+                    <p><strong>BOOK.</strong> Ária Maria Balazar; FURTADO, Odair; TEIXEIRA, TRASSA, Maria Lourdes. O Behaviorismon. Em: Boci, A. M. B., Furtado, O., Teixeira, M. L. Psicologias...</p>
+                    <button class="btn-artdeco" onclick="window.open('https://drive.google.com/file/d/1jkckh9O66bnoaRg6f83e9kHVJHzJaArr/view', '_blank')">Ler o texto</button>
+                </div>
+
+                <div class="item-leitura">
+                    <p><strong>DAVIDOFF, Linda.</strong> Introdução à Psicologia. M. Maleron Books, São Paulo, 2001. pp. 109-125.</p>
+                    <button class="btn-artdeco" onclick="window.open('https://drive.google.com/file/d/1MjH-mLy7QYa5FOzBvpMyjyZNDSg0vEnU/view', '_blank')">Ler o texto</button>
+                </div>
+
+                <div class="item-leitura">
+                    <p><strong>AGUI, A. B. M. A mídia à luz da teoria psicológica comportamental...</strong></p>
+                    <button class="btn-artdeco" onclick="window.open('https://drive.google.com/file/d/1MqwZ1now5lEJWfCnDYNlZ527EIf8gThd/view', '_blank')">Ler o texto</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccao-missao">
+            <div class="missao-parabens-grid">
+                <div class="missao-imagem-col">
+                    <img src="/reinoDeWalden2/imagensWalden2/ariel-voando-pombos.png" alt="Ilustração Missão">
+                    <div style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #a08c5b; margin-top: 15px;">Reino Concluído</div>
+                </div>
+                <div class="missao-conteudo-col">
+                    <span class="capitulo-tag">Missão</span>
+                    <h2>PARABÉNS!</h2>
+                    <p>Agora reúnem tudo o que vocês aprenderam sobre o Behaviorismo e sigam sua jornada com a missão de <strong>recriar o Livro Cognosis em formato Multimídia</strong>. Leia o documento de orientação para a produção da postagem sobre o Reino de Walden II.</p>
+                    
+                    <div class="topicos-losango">
+                        <div class="topico-item">
+                            <div class="icone-losango"><span>1</span></div>
+                            <span>Ler o documento de orientação</span>
+                        </div>
+                        <div class="topico-item">
+                            <div class="icone-losango"><span>2</span></div>
+                            <span>Ver os exemplos de postagens abaixo</span>
+                        </div>
+                        <div class="topico-item">
+                            <div class="icone-losango"><span>3</span></div>
+                            <span>Produzir a postagem sobre o Reino de Walden II</span>
+                        </div>
+                    </div>
+
+                    <div class="botoes-navegacao-missao">
+                        <button class="btn-nav-final" onclick="window.open('https://drive.google.com/file/d/1ytbd_def79SqR3PgVesfAnyOhkT3-htH/view', '_blank')">ORIENTAÇÃO ↗</button>
+                        <button class="btn-voltar" onclick="window.location.href='../condicionamento/condicionamento.html'">◀ Voltar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exemplos-postagens">
+                <h2 style="font-size: 26px; font-weight: normal; margin-bottom: 20px;">Exemplos de Postagens</h2>
+                <div class="grid-posts">
+                    <div class="card-post">
+                        <a target="_blank" href="https://www.instagram.com/p/DDKVMY_OesQ/?img_index=1">
+                            <img src="/reinoDeWalden2/imagensWalden2/post-1.png" alt="Postagem 1">
+                            <div class="midia-info" style="justify-content: center; margin-top: 10px;">Instagram</div>
+                        </a>
+                    </div>
+                    <div class="card-post">
+                        <a href="https://www.instagram.com/p/DDIrlkVuEqk/?img_index=1" target="_blank">
+                            <img src="/reinoDeWalden2/imagensWalden2/post-2.png" alt="Postagem 2">
+                            <div class="midia-info" style="justify-content: center; margin-top: 10px;">Instagram</div>
+                        </a>
+                    </div>
+                    <div class="card-post">
+                        <a href="https://www.instagram.com/p/DDKlUH8xruu/" target="_blank">
+                            <img src="/reinoDeWalden2/imagensWalden2/post-3.png" alt="Postagem 3">
+                            <div class="midia-info" style="justify-content: center; margin-top: 10px;">Instagram</div>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="botao-perfil-container">
+                <a href="https://www.instagram.com/cognosis_ufc/" target="_blank" class="btn-perfil-cognosis">
+                    Encontra outros exemplos em nosso perfil Cognosis ↗
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape-final">
+        <div>[ UFS · SMD · CTD ]</div>
+        <div>Ilustrações e quadrinhos: Pamela de Castro Freitas Oliveira (@pameladecastroilustra)</div>
+    </footer>
+
+    <script src="missao.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Linha do Tempo - Cognosis</title>
+
+    <link rel="stylesheet" href="linhaDoTempo.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <div class="logo">COGNOSIS</div>
+            <div class="breadcrumb">
+                Jornada Cognosis / Missão Linha do Tempo
+                <!-- Caminho ajustado para voltar à pasta do mapa -->
+                <a href="../mapa/mapa.html" style="color: #666; text-decoration: none; margin-left: 10px;">← Voltar a jornada</a>
+            </div>
+        </header>
+
+        <!-- Título / Banner -->
+        <section class="banner-titulo">
+            <h2 class="subtitulo-missao">Missão Linha do Tempo</h2>
+            <h1 class="titulo-principal">
+                <span class="linha-1">Cognição ao longo do tempo e da</span><br>
+                <span class="linha-2">História Humana</span>
+            </h1>
+            <p class="descricao-missao">
+                Na sua preparação para a jornada pelos Reinos da cognição, estude as práticas cognitivas e as tecnologias desenvolvidas ao longo de cinco períodos da história da humanidade, desde a pré-história até os dias atuais.
+            </p>
+        </section>
+
+        <!-- Carrossel de Vídeos -->
+        <section class="carousel-container">
+            <div class="carousel-track" id="trilhaCarrossel">
+                
+                <div class="carousel-slide">
+                    <iframe class="video-placeholder" style="border: none;" src="https://www.youtube.com/embed/drx_qlKVw6o?si=XqXIw4CXwk4DROP_" title="Vídeo Pré-história" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-legenda">Pré-história</div>
+                    <div class="video-periodo">4.000 a.C a 3.500 a.C</div>
+                </div>
+
+                <div class="carousel-slide">
+                    <iframe class="video-placeholder" style="border: none;" src="https://www.youtube.com/embed/qtCgTTxU4pI?si=B-8M597ukL2EMhDS" title="Vídeo Idade Antiga" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-legenda">Idade Antiga</div>
+                    <div class="video-periodo">3.500 a.C. a 476 d.C.</div>
+                </div>
+
+                <div class="carousel-slide">
+                    <iframe class="video-placeholder" style="border: none;" src="https://www.youtube.com/embed/QjoHiK_luxw?si=UMl3n3k9H4mMU6jP" title="Vídeo Idade Média" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-legenda">Idade Média</div>
+                    <div class="video-periodo">476 d.C a 1453 d.C.</div>
+                </div>
+
+                <div class="carousel-slide">
+                    <iframe class="video-placeholder" style="border: none;" src="https://www.youtube.com/embed/MRE-8r7xI5Y?si=q0nV0obbM1cAfL_N" title="Vídeo Idade Moderna" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-legenda">Idade Moderna</div>
+                    <div class="video-periodo">1453 d.C a 1789 d.C</div>
+                </div>
+
+                <div class="carousel-slide">
+                    <iframe class="video-placeholder" style="border: none;" src="https://www.youtube.com/embed/D25cxMBC2qk?si=OU33BEUiGWsoqEdA" title="Vídeo Idade Contemporânea" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-legenda">Idade Contemporânea</div>
+                    <div class="video-periodo">1789 d.C até os dias atuais</div>
+                </div>
+
+            </div>
+
+            <!-- Botões de controle do carrossel -->
+            <button class="carousel-btn btn-prev" onclick="moverCarrossel(-1)">&#8592;</button>
+            <button class="carousel-btn btn-next" onclick="moverCarrossel(1)">&#8594;</button>
+        </section>
+
+        <!-- Missões -->
+        <h2 class="missoes-titulo">Na missão, vocês devem:</h2>
+
+        <!-- MISSÃO 1 -->
+        <article class="missao-card">
+            <div class="missao-numero">1</div>
+            <div class="missao-texto">
+                <p>Ler o texto abaixo:</p>
+                <p style="margin-top: 10px;">REGIS, Fátima; MESSIAS, José. Comunicação, Tecnologia e cognição: rearticulando homem, mundo e pensamento. In: Regis, Fátima; Ortiz, Anderson; Affonso, Luiz Carlos e Timponi, Raquel. Tecnologias de Comunicação e Cognição. Porto Alegre: Sulina, 2012, pp. 23-51.</p>
+                <a href="https://drive.google.com/file/d/1CaiQ3xz6a8sQ6hjFtvb6AStpfQFQHhLP/view" class="btn-texto" target="_blank">Acessar o texto</a>
+            </div>
+            <input type="checkbox" class="missao-checkbox" title="Marcar como concluído">
+        </article>
+
+        <!-- MISSÃO 2 -->
+        <article class="missao-card">
+            <div class="missao-numero">2</div>
+            <div class="missao-texto">
+                <p>Assistir aos seguintes vídeos:</p>
+                <div class="video-grid">
+                    <iframe class="video-placeholder" style="border: none;" src="https://www.youtube.com/embed/cKaWJ72x1rI?si=wfOTDN__UudplEcE" title="Vídeo de Apoio 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="video-placeholder" style="border: none;" src="https://www.youtube.com/embed/HffWFd_6bJ0?si=VnfHDprhV-KNHxIY" title="Vídeo de Apoio 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="video-placeholder" style="border: none;" src="https://www.youtube.com/embed/dGiQaabX3_o?si=LzMn_6zWNpGE4uso" title="Vídeo de Apoio 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="video-placeholder" style="border: none;" src="https://www.youtube.com/embed/CWu29PRCUvQ?si=PkZw6ijgBCmc-Wnd" title="Vídeo de Apoio 4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <input type="checkbox" class="missao-checkbox" title="Marcar como concluído">
+        </article>
+
+        <!-- MISSÃO 3 -->
+        <article class="missao-card">
+            <div class="missao-numero">3</div>
+            <div class="missao-texto">
+                <p>Como forma de preparação para nossa missão, pesquise sobre as práticas cognitivas e as tecnologias desenvolvidas ao longo da história da humanidade desde a Pré-História até os dias atuais.</p>
+                <br>
+                <p><strong>A pesquisa deve abranger uma linha do tempo compreendendo os seguintes períodos:</strong></p>
+                <ul style="list-style-type: none; margin-top: 10px; margin-bottom: 20px;">
+                    <li>(1) Pré-História: 4.000 a.C a 3.500 a.C;</li>
+                    <li>(2) Idade Antiga: 3.500 a.C. a 476 d.C;</li>
+                    <li>(3) Idade Média: 476 d.C a 1453 d.C.;</li>
+                    <li>(4) Idade Moderna: 1453 d.C a 1789 d.C;</li>
+                    <li>(5) Idade Contemporânea: 1789 d.C até os dias atuais.</li>
+                </ul>
+
+                <p><strong>Em cada período, reflita sobre três questões:</strong></p>
+                <ol style="margin-left: 20px; margin-top: 10px; margin-bottom: 20px;">
+                    <li>Como os seres humanos explicavam o conhecimento e o mundo?</li>
+                    <li>Quais as atividades e as práticas culturais que os humanos realizavam?</li>
+                    <li>Quais as principais tecnologias desenvolvidas neste período?</li>
+                </ol>
+
+                <p><em>Depois da pesquisa, discuta como relacionar as 3 perguntas acima para cada período específico da história humana para compreender as tecnologias e as práticas culturais de cada época.</em></p>
+            </div>
+            <input type="checkbox" class="missao-checkbox" title="Marcar como concluído">
+        </article>
+
+        <div class="rodape">
+            <button class="btn-voltar" onclick="window.location.href='../mapa/mapa.html'">Voltar ao mapa da jornada</button>
+        </div>
+
+    </div>
+
+    <script src="linhaDoTempo.js"></script>
+</body>
+</html>

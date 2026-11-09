@@ -1,0 +1,98 @@
+/* Configurações gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f9fa; 
+    font-family: Arial, sans-serif;
+    overflow: hidden; 
+}
+
+.mapa-container {
+    position: relative;
+    width: 100vw;
+    height: 100vw;
+    height: 100vh;
+}
+
+/* Botão de voltar */
+.btn-voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 18px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 100;
+    transition: background-color 0.2s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #e2e2e2;
+}
+
+/* Configuração base para os reinos */
+.ponto-interativo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease;
+}
+
+.ponto-interativo:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    z-index: 10;
+}
+
+/* Limite de tamanho para as imagens dos reinos */
+.ponto-interativo img {
+    max-width: 180px; 
+    max-height: 180px;
+    object-fit: contain;
+    margin-bottom: 8px;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+/* textos abaixo das imagens */
+.ponto-interativo span {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Ampulheta */
+.centro-ampulheta {
+    top: 50%;
+    left: 50%;
+}
+
+/* Walden II */
+.reino-walden {
+    top: 25%;
+    left: 25%;
+}
+
+/* Pragnanz */
+.reino-pragnanz {
+    top: 25%;
+    left: 75%;
+}
+
+/* Orsha */
+.reino-orsha {
+    top: 75%;
+    left: 30%;
+}
