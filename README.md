@@ -40,9 +40,10 @@ Prints serão adicionados futuramente
 ## Tecnologias
 
 Front-end:
-- HTML
-- CSS
-- JavaScript
+- HTML: Utilizado para a construção do esqueleto da aplicação.
+- CSS: Utilizado para estilização de todas as páginas da aplicação.
+- JavaScript: Utilizado para gerar a interatividade da aplicação.
+- Biblioteca Turn.JS: Utilizada para fazer um livro digital interativo.
   
 Back-end:
 - Google Sheets + Google Apps Script (validação de matrícula e registro de acessos)
@@ -115,7 +116,7 @@ Pronto: a aplicação estará rodando e a planilha registrará os acessos.
 | RF07 | O sistema deve exibir um vídeo de abertura como transição entre o login e o livro interativo. | Baixa | Implementado |
 | RF08 | O sistema deve possuir um livro interativo com conteúdos da matéria | Alta | Implementado |
 | RF09 | O sistema deve exibir o Mapa da Jornada com quatro destinos clicáveis: Walden II, Pragnanz, Orsha e Missão Linha do Tempo. | Alta | Implementado |
-| RF10 | O sistema deve permitir voltar ao Mapa da Jornada a partir de qualquer reino ou missão. | Alta | Em andamento |
+| RF10 | O sistema deve permitir voltar ao Mapa da Jornada a partir de qualquer reino ou missão. | Alta | Implementado |
 | RF11 | O sistema deve ter a Missão Linha do Tempo, com texto-base, vídeos de apoio, orientação de pesquisa e checklist de etapas. | Alta | Implementado |
 | RF12 | O Reino Walden II deve apresentar o conteúdo em capítulos sequenciais, com navegação Voltar e Continuar. | Alta | Implementado |
 | RF13 | Os reinos devem apresentar conteúdo teórico em texto e imagens. | Alta | Em andamento |
@@ -124,7 +125,6 @@ Pronto: a aplicação estará rodando e a planilha registrará os acessos.
 | RF16 | Imagens em órbita na tela de login com links externos (ex: Instagram do Cognosis e da equipe) | Baixa | Implementado |
 | RF17 | O Reino Pragnanz deve seguir a estrutura do Walden II, com capítulos e conteúdos em HTML interativo. | Alta | Em andamento |
 | RF18 | O Reino Orsha deve ter uma lista de conversas com personagens, uma por tema. | Alta | A fazer |
-| RF19 | Cada conversa de Orsha deve ser exibida em formato de chat, com histórico de mensagens e mídias. | Alta | A fazer |
 
 ## Link para o Relatório Final
 
