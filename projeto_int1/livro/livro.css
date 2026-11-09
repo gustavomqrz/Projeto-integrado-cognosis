@@ -1,0 +1,127 @@
+/* Variáveis globais */
+:root {
+    --fundo-escuro: #111827; 
+    --cor-papel: #fdf6e3;
+    --cor-capa: #0f172a;
+    --cor-dourado: #d4af37;
+    --fundo-do-mapa: #e5e0d8;
+}
+
+/* Configurações básicas da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background-color: var(--fundo-escuro);
+    color: #333;
+    overflow: hidden;
+}
+
+/* livro */
+.conteiner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.caixa-livro {
+    width: 900px;
+    height: 600px;
+    position: relative;
+}
+
+#livro-interativo {
+    width: 900px;
+    height: 600px;
+}
+
+#livro-interativo .page, #livro-interativo .hard {
+    background-color: var(--cor-papel);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.05);
+}
+
+.conteudo {
+    padding: 40px;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.texto-centralizado {
+    text-align: center;
+}
+
+/* botões laterais */
+.botao-navegacao {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.botao-navegacao:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.botao-esquerda {
+    left: 50px;
+}
+
+.botao-direita {
+    right: 50px;
+}
+
+/* portal */
+.imagem-portal {
+    width: 80%;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    position: relative; 
+    z-index: 100;       
+}
+
+.imagem-portal:hover {
+    transform: scale(1.05);
+}
+
+.botao-acao {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    color: #555;
+    font-size: 1.2rem;
+    font-family: inherit;
+    cursor: pointer;
+    position: relative; 
+    z-index: 100;       
+}
+
+/* Efeito de Zoom (Entrada no Portal / Vórtice) */
+.portal-zoom-entrada {
+    transform: scale(50) rotate(180deg) !important; 
+    
+    transition: transform 1.5s cubic-bezier(0.5, 0, 0.2, 1) !important; 
+    
+    position: absolute; 
+    z-index: 99999; 
+    pointer-events: none; 
+}
+
+/* Garante que o livro interativo não apareça por trás do vídeo de abertura */
+#secao-livro {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}

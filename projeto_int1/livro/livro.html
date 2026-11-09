@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognosis - Jornada Interativa</title>
+
+    <link rel="stylesheet" href="livro.css">
+    <style>
+        /* ===== ESTILO DO VÍDEO DE ABERTURA (OVERLAY) ===== */
+        #overlay-abertura {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999; /* Fica acima de tudo */
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 850px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Botão Pular Estilo Art Deco / Elegante */
+        .btn-pular-video {
+            position: absolute;
+            top: -40px;
+            right: 20px;
+            background: transparent;
+            border: 1px solid #d4af37;
+            color: #d4af37;
+            padding: 6px 18px;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-pular-video:hover {
+            background-color: #d4af37;
+            color: #111827;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== CAMADA DO VÍDEO DE ABERTURA (TOCA LOGO APÓS O LOGIN) ===== -->
+    <div id="overlay-abertura">
+        <div class="video-wrapper">
+            <button class="btn-pular-video" onclick="fecharAbertura()">Pular Vídeo ⏭</button>
+            <video id="videoAbertura" width="100%" controls autoplay style="border: 1px solid #d4af37; background: #000;">
+                <!-- Ajuste o caminho do seu vídeo de abertura abaixo -->
+                <source src="imagensLivro/abertura.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+        </div>
+    </div>
+
+
+    <!-- ===== CONTEÚDO DO LIVRO (TURNS.JS) ===== -->
+    <div id="secao-livro" class="conteiner">
+        
+        <!-- Botões de navegação laterais -->
+        <button id="botao-anterior" class="botao-navegacao botao-esquerda">&#10094;</button>
+        <button id="botao-proximo" class="botao-navegacao botao-direita">&#10095;</button>
+
+        <div class="caixa-livro">
+            <div id="livro-interativo">
+                
+                <div class="hard"></div>
+                
+                <!-- Páginas do livro -->
+                <div class="page" style="background-image: url('imagensLivro/capa.jpg'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat;"></div>
+                <div class="page" style="background-image: url('imagensLivro/cap1.jpg'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat;"></div>
+                <div class="page" style="background-image: url('imagensLivro/cap2.jpg'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat;"></div>
+                <div class="page" style="background-image: url('imagensLivro/cap3.jpg'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat;"></div>
+                <div class="page" style="background-image: url('imagensLivro/cap4.jpg'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat;"></div>
+
+                <!-- Última página contendo o portal de entrada para o mapa -->
+                <div class="page">
+                    <div class="conteudo texto-centralizado">
+                        <h2>A Jornada</h2>
+                        <img src="imagensLivro/portal.jpg" alt="Portal de Entrada" class="imagem-portal">
+                        <button id="botao-entrar-portal" class="botao-acao">Entrar em Cognosis ⮞</button>
+                    </div>
+                </div>
+                
+                <div class="hard"></div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts externos -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="turn.min.js"></script>
+    <script src="livro.js"></script>
+</body>
+</html>

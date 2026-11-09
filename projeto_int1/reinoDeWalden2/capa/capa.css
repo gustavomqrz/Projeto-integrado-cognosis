@@ -1,0 +1,211 @@
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #050505;
+    background-image: radial-gradient(circle at center, #151515 0%, #050505 80%);
+    color: #e3c076;
+    font-family: 'Georgia', serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+/* navegação topo */
+.nav-topo {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #a08c5b;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.nav-topo a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-topo a:hover {
+    color: #e3c076;
+}
+
+/* cabeçalho */
+.cabecalho-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.icone-topo svg {
+    width: 35px;
+    height: 25px;
+    stroke: #e3c076;
+    stroke-width: 1.5;
+    fill: none;
+    margin-bottom: 5px;
+}
+
+.moldura-titulo {
+    display: inline-block;
+    border: 1px solid #e3c076;
+    padding: 20px 60px;
+    position: relative;
+    outline: 1px solid #e3c076;
+    outline-offset: -5px;
+    margin-bottom: -15px;
+    background-color: #050505;
+}
+
+.moldura-titulo h1 {
+    font-size: 44px;
+    font-weight: normal;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.etiqueta-saudacao {
+    display: inline-block;
+    background-color: #050505;
+    border: 1px solid #e3c076;
+    padding: 6px 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
+}
+
+/* conteudo principal */
+.corpo-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+    gap: 50px;
+}
+
+.area-personagem {
+    width: 600px;
+    flex-shrink: 0;
+    margin-bottom: -90px;
+}
+
+.area-personagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.area-conteudo-direita {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+}
+
+.balao-fala {
+    border: 1px solid #e3c076;
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+    background-color: #050505;
+    margin-bottom: 25px;
+}
+
+.balao-fala p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    color: #f0e6d2;
+}
+
+.balao-fala p:last-child {
+    margin-bottom: 0;
+}
+
+/* Botões */
+.grupo-botoes {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    flex: 1;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    cursor: pointer;
+    border: 1px solid #e3c076;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-ingressar {
+    background-color: #e3c076;
+    color: #050505;
+    font-weight: bold;
+}
+
+.btn-ingressar:hover {
+    background-color: #cda85c;
+}
+
+.btn-voltar {
+    background-color: transparent;
+    color: #e3c076;
+}
+
+.btn-voltar:hover {
+    background-color: rgba(227, 192, 118, 0.1);
+}
+
+.info-extras {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.info-caixa {
+    flex: 1;
+    border: 1px solid #443820;
+    text-align: center;
+    padding: 8px 5px;
+    font-size: 11px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #bfae88;
+    letter-spacing: 0.5px;
+}
+
+.rodape-capa {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #777;
+    border-top: 1px solid #e3c076;
+}
+
+.rodape-creditos {
+    letter-spacing: 0.5px;
+}
