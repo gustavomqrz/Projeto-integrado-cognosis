@@ -72,18 +72,19 @@ git clone https://github.com/SEU-USUARIO/Projeto-integrado-cognosis.git
 
 2. Abrir no editor
 
-Abra a pasta raiz do projeto no seu editor de código (por exemplo, o VS Code). A estrutura principal deve exibir a pasta projeto_int1/, contendo os diretórios linhaDoTempo, livro, login, mapa e reinoDeWalden2.
+Abra a pasta raiz do projeto no seu editor de código (por exemplo, o VS Code). A estrutura principal deve exibir a pasta projeto_int1/, contendo seus diretórios.
 
 3. Configurar o back-end (planilha de acessos - opcional)
 
 Para habilitar o registro automático de logins e acessos dos alunos através do Google Sheets:
+ 
+1. Crie uma nova planilha no Google Sheets com duas abas de nomes exatos:
+   - `Alunos`: linha 1 com o cabeçalho (`Matrícula` e `Aluno`). A partir da linha 2, insira na coluna A a matrícula e na coluna B o nome do aluno.
+   - `Acessos`: mantenha vazia, apenas com o cabeçalho na linha 1 (`Nome`, `Matrícula`, `Tipo`, `Data`, `Horário`). O script gravará cada novo acesso a partir da linha 2.
+2. Na planilha, acesse **Extensões > Apps Script**, apague qualquer código padrão e cole o conteúdo do arquivo `login.gs` (localizado dentro da pasta `login/` do projeto).
+3. Clique em **Implantar > Nova implantação**, selecione o tipo **App da Web** e configure **Executar como: Eu** e **Quem pode acessar: Qualquer pessoa**.
+4. Copie a URL gerada pelo Google Apps Script (que termina em `/exec`) e cole-a na constante `URL_SCRIPT_LOGIN`, localizada no topo do arquivo `login/login.js`.
 
-Crie uma nova planilha no Google Sheets com duas abas de nomes exatos:
-Alunos: linha 1 com o cabeçalho (Matrícula e Aluno). A partir da linha 2, insira na coluna A a matrícula e na coluna B o nome do aluno.
-Acessos: mantenha vazia, apenas com o cabeçalho na linha 1 (Nome, Matrícula, Tipo, Data, Horário). O script gravará cada novo acesso a partir da linha 2.
-Na planilha, acesse Extensões > Apps Script, apague qualquer código padrão e cole o conteúdo do arquivo login.gs (localizado dentro da pasta login/ do projeto).
-Clique em Implantar > Nova implantação, selecione o tipo App da Web e configure Executar como: Eu e Quem pode acessar: Qualquer pessoa.
-Copie a URL gerada pelo Google Apps Script (que termina em /exec) e cole-a na constante URL_SCRIPT_LOGIN, localizada no topo do arquivo login/login.js.
 
 4. Executar a aplicação
 No VS Code, acesse a pasta projeto_int1/login.
